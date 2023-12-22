@@ -3,3 +3,19 @@ Wiki-Format: zim 0.6
 Creation-Date: 2023-12-23T00:05:59+05:30
 
 ====== Saturday 23 Dec 2023 ======
+
+==== Started the whole thing ====
+
+Well, today, I finally decided to do this...
+
+I always wanted to test my skills by doing the whole web development thing perfectly from the start.
+I want to try to build the backend in various languages, including Rust, Go and yes, even python.
+
+Databases I would use are Postgres and Redis for Caching
+
+The frontends would be partially in SvelteKit and HTMX.
+I am quite excited.
+
+Do follow along the journals if you interested ☺
+
+They will be posted initially here on Github and then slowly on my [[https://noobscience.vercel.app|website]].

@@ -1,0 +1,17 @@
+meta {
+  name: version
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8000/version
+  body: none
+  auth: none
+}
+
+docs {
+  # Version Test
+  
+  Returns the current version of the API Gateway
+}
