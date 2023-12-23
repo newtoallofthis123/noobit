@@ -3,6 +3,8 @@ use sqlx::{postgres::PgPoolOptions, Pool, Postgres};
 use crate::config::config;
 use crate::errors::{Error, Result};
 
+use super::user::UserTable;
+
 pub type Db = Pool<Postgres>;
 
 pub async fn start_pg_pool() -> Result<Db> {
@@ -29,6 +31,14 @@ impl Model {
     pub async fn test_db(&self) -> Result<()> {
         sqlx::query("SELECT 1")
             .fetch_one(&self.db)
+            .await
+            .map(|_| ())
+            .map_err(Error::DbConnection)
+    }
+
+    pub async fn init_db(&self) -> Result<()> {
+        sqlx::query(&UserTable::create_table())
+            .execute(&self.db)
             .await
             .map(|_| ())
             .map_err(Error::DbConnection)

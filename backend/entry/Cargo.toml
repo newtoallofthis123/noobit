@@ -19,6 +19,9 @@ sqlx = { version = "0.7", features = [ "runtime-tokio", "postgres" ] }
 chrono = { version = "0.4", features = ["serde"] }
 serde_with = {version = "3.4.0"}
 reqwest = {version = "0.11", features = ["json"]}
+sea-query = {version = "0", features = ["sea-query-derive"]}
+uuid = {version = "1", features = ["serde", "v4"] }
+bcrypt="0.15"
 
 [dev-dependencies]
 axum-test-helper = "0.*"

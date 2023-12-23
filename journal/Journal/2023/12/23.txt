@@ -19,3 +19,10 @@ I am quite excited.
 Do follow along the journals if you interested ☺
 
 They will be posted initially here on Github and then slowly on my [[https://noobscience.vercel.app|website]].
+
+==== The Initial Part Works ====
+
+Well for now, I am mainly focusing on the rust part and I was able to set up sqlx and sea-query. 
+So my program now works with a postgresql database.
+
+Quite excited for what I can do next.
