@@ -1,8 +1,0 @@
-[tasks.clippy]
-command = "cargo"
-args = ["clippy", "--fix", "--all-targets", "--allow-dirty"]
-
-[tasks.watch]
-command = "cargo"
-args = ["watch", "-q", "-c", "-w", "src/", "-w", ".cargo/", "-x", "run"]
-dependencies = ["clippy"]
