@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="go build noobit" type="GoApplicationRunConfiguration"
+                   factoryName="Go Application" nameIsGenerated="true">
+        <module name="backend"/>
+        <working_directory value="$PROJECT_DIR$"/>
+        <kind value="PACKAGE"/>
+        <package value="noobit"/>
+        <directory value="$PROJECT_DIR$"/>
+        <filePath value="$PROJECT_DIR$/main.go"/>
+        <output_directory value="$PROJECT_DIR$/bin"/>
+        <method v="2"/>
+    </configuration>
+</component>
